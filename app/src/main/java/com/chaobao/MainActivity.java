@@ -26,16 +26,16 @@ public class MainActivity extends AppCompatActivity {
             //透明导航栏
             getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
 
-            LinearLayout linear = (LinearLayout) findViewById(R.id.main_status_bar);
+            LinearLayout linears = (LinearLayout) findViewById(R.id.main_status_bar);
 
-            linear.setVisibility(View.VISIBLE);
+            linears.setVisibility(View.VISIBLE);
 
             int mStatusH = getStatusBarHeight();
 
             //动态设置高度
-            LinearLayout.LayoutParams params = (LinearLayout.LayoutParams)linear.getLayoutParams();
+            LinearLayout.LayoutParams params = (LinearLayout.LayoutParams)linears.getLayoutParams();
             params.height = mStatusH;
-            linear.setLayoutParams(params);
+            linears.setLayoutParams(params);
         }
     }
 
